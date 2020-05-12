@@ -40,7 +40,6 @@ public class Controller {
             img = PropertyUtils.getProperty(propValue, "picture").toString();
         } catch (Exception e) { e.printStackTrace(); }
 
-        list.setUrl("http://www.google.com");
         list.setUrl("http://localhost:3000/list?name=" + name + "&email=" + mail + "&picture=" + img);
         return list;
     }
